@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+  .playwrite-cu-font {
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* shared class */
+  .btn-primary{
+    color: white;
+    border-radius: 42px;
+    background: #E6533C;
+    margin: 24px 0;
+    padding: 14px 36px;
+  }
+
+  .description-color{
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  body{
+    background-color: #000000;
+    width: 100%;
+    margin: 0;
+    
+  }
+
+  /* navbar styles */
+  header{
+    background:#111111;
+  }
+
+  .header-part{
+    max-width: 1100px;
+    margin: 0 auto;
+    
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+  
+
+  }
+  .nav-title{
+    color: #E6533C;
+    font-size: 2.2rem;
+  }
+  .nav-menu ul{
+    display: flex;
+    gap: 60px;
+    box-sizing: border-box;
+    margin-top: 39px;
+    padding: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px; 
+  }
+  .nav-item{
+    list-style: none;
+    
+  }
+  .nav-links{
+    text-decoration: none;
+    color: white;
+  }
+  .home-color{
+    padding: 2px 14px;
+    border-radius: 46px;
+    background-color: #E6533C;
+  }
+  /* banner styles */
+  .banner-container{
+    color: white;
+  }
+  .banner-title{
+    font-size: 4.5rem;
+    font-weight: 900;
+  }
+
+  .banner{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+  }
+  .banner-description{
+    width: 80%;
+  }
+  #btn-download{
+    color: white;
+    background: black;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 42px;
+    margin: 0 12px;
+    padding: 14px 36px;
+
+  }
+  .video-badge{
+    margin-left: -64px;
+    margin-top: -160px;
+  }
+  .video-badge-btn{
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1) ;
+    border-radius: 12px;
+    backdrop-filter: blur(20px) ;
+    background: rgba(48, 48, 48, 0.54);
+    padding: 15px 40px;
+
+  }
+  .video-badge-number{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  .workout-badge{
+    margin-top: -385px;
+    margin-left: 230px;
+    width: 190px;
+  
+  }
+  .workout-badge-btn{
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 16px 24px;
+  }
+  .workout-badge-number{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+
+  
+  
+  
