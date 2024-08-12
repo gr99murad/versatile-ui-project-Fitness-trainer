@@ -207,11 +207,18 @@
     }
     .fa-bars{
   
-      /* display: block; */
-      visibility: visible;
-      margin-left: 110px;
+      display: block;
+      /* visibility: visible; */
+      margin-left: 90px;
       margin-top: 40px;
      
+      
+    }
+    .fa-play{
+      /* visibility: visible; */
+      display: block;
+      margin-top: 10px;
+      margin-left: 3px;
       
     }
     .nav-menu{
@@ -255,10 +262,10 @@
   
     }
     .banner-img{
-      margin-left: 10px;
+      margin-left: -29px;
     }
     .video-badge-btn{
-      margin-left: 80px;
+      margin-left: 40px;
       width: 150px;
       height: 66px;
       gap: 20px;
@@ -274,13 +281,7 @@
       height: 30px;
       margin-top: 5px;
     }
-    .fa-play{
-      visibility: visible;
-      /* display: block; */
-      margin-top: 10px;
-      margin-left: 3px;
-      
-    }
+    
     .video-badge-number{
       font-size: 1.1rem;
     }
