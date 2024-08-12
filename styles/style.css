@@ -201,13 +201,17 @@
 
   @media screen and (max-width:576px){
     .nav-menu ul{
-      visibility: hidden;
+      /* visibility: hidden; */
+      display: none;
 
     }
     .fa-bars{
+  
+      /* display: block; */
       visibility: visible;
-      margin-left: 160px;
-      display: block;
+      margin-left: 110px;
+      margin-top: 40px;
+     
       
     }
     .nav-menu{
@@ -222,7 +226,7 @@
     }
     .workout-badge{
       margin-top:-390px;
-      margin-left:150px ;
+      margin-left:170px ;
     }
     /* .workout-badge-btn{
       margin-left: -65px;
@@ -236,30 +240,30 @@
     .change-habit-title-content{
       margin: 0 auto;
     }
-    .change-habits{
+    /* .change-habits{
       margin: 0;
-    }
+    } */
     
     .banner-btn{
       display: flex;
-      justify-content: center;
+      justify-content:space-between;
     }
     #btn-download{
-      margin: 25px 35px;
+      margin: 25px 0px;
       padding: 14px 36px;
       
   
     }
     .banner-img{
-      margin-left: -30px;
+      margin-left: 10px;
     }
     .video-badge-btn{
-      margin-left: 30px;
+      margin-left: 80px;
       width: 150px;
       height: 66px;
       gap: 20px;
       padding-right:7px;
-      margin-top: -312px;
+      margin-top: -330px;
      
       
 
@@ -272,6 +276,7 @@
     }
     .fa-play{
       visibility: visible;
+      /* display: block; */
       margin-top: 10px;
       margin-left: 3px;
       
@@ -302,7 +307,7 @@
     
     .change-habits{
       text-align: center;
-      margin-left: -48px;
+      margin-left: -10px;
     }
 
 
