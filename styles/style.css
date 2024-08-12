@@ -176,6 +176,9 @@
     /* max-width: 1060px; */
     width: 80%;
   }
+  .change-habits{
+    margin-bottom: 100px;
+  }
   .change-habit-title{
     color: white;
     font-size: 3rem;
@@ -194,6 +197,38 @@
   }
   .change-habit-content-title{
     color: white;
+  }
+
+  /* run an extra section styles */
+  .run-extra{
+    background: rgb(34, 34, 34);
+    border-radius: 18px;
+  }
+  .run-extra-container{
+    display: flex;
+    gap: 130px;
+    /* justify-content: space-around; */
+    align-items: center;
+    
+  
+  }
+  .run-extra-content{
+    margin-left: 50px;
+  }
+  .run-extra-title{
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  
+  .run-extra-img img{
+    width: 365px;
+    height: 312px;
+    margin: 30px;
+    border-radius: 18px;
+   
+  }
+  .btn-run{
+    padding: 15px 54px;
   }
 
 
