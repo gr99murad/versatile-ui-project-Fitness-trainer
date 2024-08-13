@@ -219,6 +219,10 @@
     font-size: 3rem;
     font-weight: 900;
   }
+  /* .run-extra-img{
+    object-fit: cover;
+    transform: scale(2.5) translate(-61px,12%);
+  } */
   
   .run-extra-img img{
     width: 365px;
@@ -358,6 +362,29 @@
     .change-habit-title{
       font-size: 2rem;
     }
+
+    /* run an extra */
+    .run-extra-container{
+      flex-direction: column;
+      
+    }
+    .run-extra-img img {
+    
+      width: 248px;
+      height: 170px;
+      margin-top: -125px;
+    
+    }
+    .run-extra-title{
+      font-size: 2rem;
+    }
+    .run-extra-content{
+      margin-right: 42px;
+    }
+    .btn-run{
+      width: 100%;
+    }
+
  
     
     
