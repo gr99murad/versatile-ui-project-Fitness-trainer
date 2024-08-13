@@ -6,26 +6,7 @@
     <title>GR Fitness Training</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        .fa-bars{
-            position: absolute;
-            
-            color: white;
-            /* visibility: hidden; */
-            display: none;
-            
-            
-        }
-        .fa-play{
-            color: white;
-            margin-top: 13px;
-            /* visibility: hidden; */
-            display: none;
-           
-
-
-        }
-    </style>
+    
 
 
 </head>
@@ -157,29 +138,83 @@
             </div>
         </section>
 
-        <!-- another section bmi calculator start -->
-
-        <!-- <section class="bmi-calculator">
-            <div class="bmi-container">
+        <section class="bmi-container">
+            <div >
                 <h3 class="bmi-title color">BMI Calculator</h3>
                 <p class="bmi-description description-color">A BMI calculator quickly estimates body fat by dividing a person's weight by the square of their height.</p>
             </div>
-            <div class="bmi-chart-calculate">
-                <div class="bmi-chart">
-                    <h3 class="chart-title">BMI Calculator Chart</h3>
+        </section>
 
+        <!-- another section bmi calculator start -->
 
-
+        <div class="bmi-background">
+            <section class="bmi-calculator">
+           
+                <div class="bmi-chart-calculate">
+                    <div class="bmi-chart">
+                        <h3 class="chart-title color">BMI Calculator Chart</h3>
+                        <table class="description-color">
+                            <thead class="color table-head">
+                                <tr>
+                                    <th class="tro">BMI</th>
+                                    <th>Weight Status</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-body">
+                                <tr>
+                                    <td>Below 18.5</td>
+                                    <td>Underweight</td>
+                                </tr>
+                                <tr>
+                                    <td>18.5 - 24.9</td>
+                                    <td>Healthy</td>
+                                </tr>
+                                <tr>
+                                    <td>25.0 - 29.9</td>
+                                    <td>Overweight</td>
+                                </tr>
+                                <tr>
+                                    <td>30.0 and Above</td>
+                                    <td>Obese</td>
+                                </tr>
+                            </tbody>
+                        </table>
+    
+                    </div>
+    
+                    <div class="bmi-calculate color">
+                        <h3 class="calculate-title">Calculate your BMI</h3>
+                        <p class="calculate-description description-color">BMI (Body Mass Index) is a numerical value derived from a person's <br>weight and height, used to assess if they are underweight, <br>normal weight, overweight, or obese.</p>
+    
+                        <form>
+                            <div class="form-row ">
+                                <input type="text" placeholder="height/cm" required>
+                                <input type="text" placeholder="Weight/kg" required>
+                            </div>
+                            <div class="form-row">
+                                <input type="text" placeholder="Age" required>
+                                <select class="form-color" required>
+                                    <option value="">Sex</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <select class="form-color" required>
+                                <option value="">Select an activity factor</option>
+                                <option value="sedentary">Sedentary</option>
+                                <option value="light">Lightly Active</option>
+                                <option value="moderate">Moderately Active</option>
+                                <option value="active">Very Active</option>
+                            </select>
+                            <button class="submit-btn btn-primary" type="submit">Calculate</button>
+    
+                        </form>
+    
+                    </div>
                 </div>
-
-                <div class="bmi-calculate">
-                    <h3 class="calculate-title">Calculate your BMI</h3>
-                    <p class="calculate-description"></p>
-
-                </div>
-            </div>
-            
-        </section> -->
+                
+            </section>
+        </div>
 
         <!-- another section start meet our team -->
 
