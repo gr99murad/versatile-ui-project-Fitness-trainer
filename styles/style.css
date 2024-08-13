@@ -209,6 +209,7 @@
     gap: 130px;
     /* justify-content: space-around; */
     align-items: center;
+    margin-bottom: 70px;
     
   
   }
@@ -233,6 +234,61 @@
   }
   .btn-run{
     padding: 15px 54px;
+  }
+
+  /* BMI-calculate section styles */
+  .bmi-container{
+    margin: 80px 385px;
+  }
+  .bmi-title{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+  }
+  .bmi-description{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 14px;
+  }
+
+  /* meet our team section styles */
+  .meet-our-team-container{
+    text-align: center;
+    margin-bottom: 58px;
+  }
+  .meet-team-content img{
+    width: 375px;
+    height: 270px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
+  }
+  .meet-team{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+  }
+
+  .team-title{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+  }
+  .meet-team{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    justify-items: center;
+    grid-row-gap: 20px;
+    padding: 20px;
+  
+  
+  }
+  .trainer-name{
+    margin-bottom: -13px;
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+  .trainer-content{
+    margin-top: -100px;
+    margin-left: 10px;
   }
 
 
@@ -383,6 +439,19 @@
     }
     .btn-run{
       width: 100%;
+    }
+    /* meet our team  */
+    .meet-team{
+      grid-template-columns: repeat(1,1fr);
+    }
+    .meet-team-content img{
+      width:300px;
+    }
+    .team-title{
+      font-size: 2rem;
+    }
+    .display-mobile{
+      display: none;
     }
 
  
