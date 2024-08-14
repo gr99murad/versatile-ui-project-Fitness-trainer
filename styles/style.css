@@ -446,6 +446,7 @@
     font-weight: 400;
     text-align: center;
     padding-bottom: 36px;
+    margin-bottom: -4px;
   }
   
 
@@ -455,6 +456,9 @@
   @media screen and (max-width:576px){
 
     /* footer styles */
+    .get-title{
+      margin-top: -4px;
+    }
     .line{
       width: 90%;
     }
