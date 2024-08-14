@@ -533,11 +533,13 @@
     .package{
       flex-direction: column;
     }
+    
     .fitness-gear-title{
       font-size: 1.5rem;
     }
     .ellipse-2{
       margin-left: 70px;
+      margin-right: 80px;
      
     }
     .booking-btn{
@@ -549,6 +551,7 @@
     .pricing-title{
       font-size: 2rem;
     }
+    
     
 
     /* footer styles */
