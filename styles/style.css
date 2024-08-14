@@ -18,6 +18,9 @@
 
   
   /* shared class */
+  .btn-primary,.booking-btn,#btn-download{
+    cursor: pointer;
+  }
   .fa-bars{
     position: absolute;
     
@@ -62,6 +65,7 @@
     margin: 0;
     
   }
+  
 
   /* navbar styles */
   header{
@@ -192,6 +196,72 @@
   }
   .badge-description{
     font-size: 0.7rem;
+  }
+
+  /* pricing plans section styles */
+  .package{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    
+  }
+  .fitness-package{
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    width: 50%;
+    text-align: center;
+    
+  
+  }
+  .price-package{
+    text-align: center;
+  }
+  .ellipse-2{
+    max-width: 190px;
+    height: 100px;
+    margin-top: 8px;
+    margin-left: 87px;
+    box-sizing: border-box;
+    border-radius: 18px;
+    box-shadow: 0px 4px 1px 0px rgba(0, 0, 0, 0.25);
+    background: rgba(48, 48, 48, 0.54);
+  }
+  .price{
+    padding-top: 24px;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  .package-time{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: -10px;
+  }
+  .fitness-gear-title{
+    font-size: 1.7rem;
+    /* padding-left: 5px;
+    padding-right: 5px; */
+    margin:20px auto;
+
+  }
+  .pricing-title{
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .pricing-content{
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .pricing-description{
+    margin-top: 0;
+  }
+  .booking-btn{
+    color: white;
+    border-radius: 42px;
+    background: #404040;
+    margin: 24px 0;
+    padding: 14px 36px;
+    font-size: 1.1rem;
+    font-weight: 600;
   }
 
   /* change  habit section styles */
@@ -437,7 +507,7 @@
   
   .line{
     border: 2px solid rgba(255, 255, 255, 0.1);
-    width: 74%;
+    width: 70%;
     margin: 50px auto;
   
   }
