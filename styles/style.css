@@ -533,6 +533,9 @@
     .package{
       flex-direction: column;
     }
+    .copy-right{
+      margin-left: 20px;
+    }
     
     .fitness-gear-title{
       font-size: 1.5rem;
@@ -803,10 +806,10 @@
       .bmi-chart{
         margin-left: 4px;
       }
-      .copy-right{
+      /* .copy-right{
         margin: 0 auto;
 
-      }
+      } */
       
     
  
