@@ -777,6 +777,8 @@
       .btn-primary{
         font-size: 0.8rem;
         margin: 30px -9px;
+      }
+      .btn-join{
         padding: 0 36px;
       }
       .fa-bars{
