@@ -552,6 +552,9 @@
     
 
     /* footer styles */
+    .footer-title,.footer-description,.footer-content,.get-title,.nav-item,.get-started,.copy-right{
+      width: 80%;
+    }
     .get-title{
       margin-top: -4px;
     }
@@ -750,12 +753,63 @@
     
     
   }
-/* big device */
-  /* @media screen and (max-width:1440px){
+/* small device */
+  @media screen and (max-width:320px){
+    .workout-badge-btn {
+        padding: 7px 24px;
+        margin-left: -40px;
+        margin-top: 45px;
+    
+      }
+      #btn-download{
+        margin: 35px -5px;
+        font-size: 0.8rem;
+      }
+      .banner-btn{
+        gap: 15px;
+      }
+      .btn-primary{
+        font-size: 0.8rem;
+        margin: 30px 0px;
+      }
+      .fa-bars{
+        margin-left: 5px;
+        margin-right: 20px;
+        width: 10%;
+        padding-left: 50px;
+      }
+      .banner-img{
+        width: 124%;
+      }
+      .run-extra-img img {
+        width: 225px;
+      }
+      .bmi-chart-calculate{
+        max-width: 320px;
+      }
+      .bmi-calculate{
+        width: 81%;
+        margin-left: -10px;
+      }
+      .bmi-calculator{
+        max-width: 320px;
+      }
+      .bmi-background{
+        max-width: 331px;
+      }
+      .bmi-chart{
+        margin-left: 4px;
+      }
+      .copy-right{
+        margin: 0 auto;
 
+      }
+      
+    
+ 
 
   }
 
-   */
+  
   
   
