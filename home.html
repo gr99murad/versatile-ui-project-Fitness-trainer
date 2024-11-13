@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GR Fitness Training</title>
+
+
+    <!-- daisy-Ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customize config -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                
+
+                
+              }
+            }
+          }
+        }
+      </script>
+      <link rel="stylesheet" href="styles/styles.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+
+</head>
+<body class="bg-[#28282B] w-ful overflow-x-hidden  inter-font ">
+    <header class="bg-gradient-to-r from-[#111111] to-[#777777]  ">
+    
+            <div class="fixed top-0 z-10 w-full items-center bg-[#28282B]">
+                <nav class="px-10 ">
+                    <div class="navbar">
+                        <div class="navbar-start pl-2">
+    
+    
+                            <a class="font-extrabold text-4xl nav-title text-[#E6533C]"><i>GR_Fitness</i></a>
+                        </div>
+                        <div class="navbar-center hidden lg:flex">
+                            <ul class="menu menu-horizontal px-1">
+                                <li><a class="font-extrabold text-slate-100">Home</a></li>
+                                <li><a class="text-slate-100">Services</a></li>
+                                <li><a class="text-slate-100">Contact</a></li>
+                                <li><a class="text-slate-100">About</a></li>
+                                <li><a class="text-slate-100">Support</a></li>
+                                <li><a href="./myPackage.html"class="text-slate-100" >My Package</a></li>
+    
+                            </ul>
+                        </div>
+                        <div class="navbar-end gap-6 hidden sm:flex">
+    
+                            <ul class="menu menu-horizontal px-2 gap-3">
+                                <li><a class="font-extrabold bg-[#E6533C] text-white" href="login.php"
+                                        target="_blank">Login</a></li>
+                                <li><a class="text-white" href="signup.php" target="_blank">Signup</a></li>
+    
+                            </ul>
+                        </div>
+    
+    
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost pl-44 lg:hidden ">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2  shadow">
+                                <li><a class="font-extrabold">Home</a></li>
+                                <li><a>Services</a></li>
+                                <li><a>Contact</a></li>
+                                <li><a>About</a></li>
+                                <li><a>Support</a></li>
+                                <li><a href="./myPackage.html"  target="_blank">My Package</a></li>
+                            </ul>
+                        </div>
+    
+                    </div>
+    
+    
+                </nav>
+    
+            </div>
+            <!-- banner section -->
+            <div class="flex flex-col md:flex-row justify-between px-10 py-10 mt-10 overflow-y-hidden">
+                <div class="">
+                    <h1 class="text-5xl text-white font-extrabold">Get body in <br> <span class="playwrite-cu-font"><i>shape</i></span> & stay <br>healthy</h1>
+                    <p class="my-4 text-[#FFFFFF80]">Achieving a healthy body and maintaining fitness involves regular physical activity,<br> balanced nutrition, and adequate rest. Consistency in exercise routines, <br>mindful eating habits, and prioritizing sleep are key to overall <br>wellness. Embracing a healthy lifestyle not only improves physical <br>health but also boosts mental well-being.</p>
+                    <div class="">
+                        <button class="btn bg-[#E6533C]">Join Club Now!</button>
+                        <button class="btn ">Download App</button>
+                    </div>
+                </div>
+                <div class=" ml-20">
+                    <img class="max-h-96" src="images/Images 2.png" alt="">
+                    <div class= "-mt-[110px] -ml-[94px]">
+                        <button class=" border border-[rgba(255,255,255,0.1)] rounded-lg bg-[rgba(48,48,48,0.54)] backdrop-blur-lg p-[15px_40px] flex gap-2">
+                          <div class=" w-10 h-10 bg-[#E6533C] -ml-6 mt-2 rounded-full flex items-center justify-center text-white">
+                            <i class="fa-solid fa-play"></i>
+                          </div>
+                          <div>
+                            <span class=" text-white text-xl font-extrabold">350+</span>
+                            <br>
+                            <span class=" text-white text-sm">Video tutorial</span>
+                          </div>
+                        </button>
+                      </div>
+                      
+                      <div class="-mt-[215px] ml-[130px] max-w-[290px]">
+                        <button class=" border border-[rgba(255,255,255,0.1)] rounded-lg backdrop-blur-lg bg-[rgba(255,255,255,0.1)] p-[16px_24px]">
+                          <span class=" text-white text-4xl font-extrabold">500+</span>
+                          <br>
+                          <span class=" text-white text-sm">Free Workout Videos</span>
+                        </button>
+                      </div>
+                      
+                    
+                   
+                    
+    
+                   </div>
+             </div>
+                </div>
+    
+    </header>
+
+    <main>
+        <!-- pricining plans section -->
+
+        <section class="my-10 mx-16 md:mx-20">
+            <div class="mb-12 text-center">
+              <h3 class="text-3xl font-extrabold text-white">Pricing Plans</h3>
+              <p class="text-white mt-0 ">Practice yoga to perfect physical beauty, take care of your soul and enjoy life more fully!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="card bg-[#222222] text-primary-content w-96">
+                    <div class="card-body">
+                      <h2 class="card-title">FREE FITNESS GEAR PACKAGE</h2>
+                      <div class="max-w-[190px] h-[100px] mt-2 ml-[87px] rounded-[18px] shadow-[0px_4px_1px_rgba(0,0,0,0.25)] bg-[rgba(48,48,48,0.54)] flex flex-col items-center justify-center">
+                        <span class="text-center">
+                          <h3 class=" text-white pt-6 text-[1.5rem] font-extrabold">600</h3>
+                          <p class=" text-white text-xs font-normal mt-[-10px]">3 MONTHS</p>
+                        </span>
+                      </div>
+                      <p>Free fitness gear complimentary one pass</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn" onclick="window.location.href='./login.php'"  >BOOKING NOW</button>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="card bg-[#222222] text-primary-content w-96">
+                    <div class="card-body">
+                      <h2 class="card-title">MEMBERSHIP PACKAGE</h2>
+                      <div class="max-w-[190px] h-[100px] mt-2 ml-[87px] rounded-[18px] shadow-[0px_4px_1px_rgba(0,0,0,0.25)] bg-[rgba(48,48,48,0.54)] flex flex-col items-center justify-center">
+                        <span class="text-center">
+                          <h3 class=" text-white pt-6 text-[1.5rem] font-extrabold">800</h3>
+                          <p class=" text-white text-xs font-normal mt-[-10px]">6 MONTHS</p>
+                        </span>
+                      </div>
+                      <p class="text-[#FFFFFF80]">Book six days different trainers class designed <br>for fast weight loss /weight gain with <br>combination of latest workouts in addition to complimentary access to gym area <br> with personal training </p>
+                      <div class="card-actions justify-end">
+                        <button class="btn" onclick="handleBooking()">BOOKING NOW</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card bg-[#222222] text-primary-content w-96">
+                    <div class="card-body">
+                      <h2 class="card-title">PREMIUM MEMBERSHIP PACKAGE</h2>
+                      <div class="max-w-[190px] h-[100px] mt-2 ml-[87px] rounded-[18px] shadow-[0px_4px_1px_rgba(0,0,0,0.25)] bg-[rgba(48,48,48,0.54)] flex flex-col items-center justify-center">
+                        <span class="text-center">
+                          <h3 class=" text-white pt-6 text-[1.5rem] font-extrabold">1200</h3>
+                          <p class=" text-white text-xs font-normal mt-[-10px]">4 MONTHS</p>
+                        </span>
+                      </div>
+                      <p class="text-[#FFFFFF80]">A combination of latest workouts in <br> addition to complimentary access to <br>the gym area with personal training
+                        <div class="card-actions justify-end">
+                            <button class="btn" onclick="window.location.href='./login.php'">BOOKING NOW</button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+
+            
+            
+          
+             
+          </section>
+          
+        <!-- change habit section -->
+        <section class="my-24">
+            <div class="text-center mb-12">
+                <h3 class=" text-white text-3xl font-extrabold">Change Your Habits</h3>
+                <p class="text-[#FFFFFF80]">"Change Your Habits" emphasizes the transformative power of
+                    small, <br> consistent changes in daily routines. By altering habits, <br> you can reshape your life, improve
+                    productivity, <br> and achieve long-term goals.</p>
+            </div>
+        
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center gap-8">
+                <div class=""> 
+                    <img class="rounded-full mx-auto" src="images/image 3.png" alt="">
+                    <h5 class=" text-white">Movement</h5>
+                    <p class="text-[#FFFFFF80]">Movement fuels energy, health,<br> and
+                        transformation.</p>
+                </div>
+        
+                <div class="">
+                    <img class=" rounded-full mx-auto" src="images/image 2.png" alt="">
+                    <h5 class=" text-white">Time</h5>
+                    <p class="text-[#FFFFFF80]">Time enables progress <br> and lasting change.
+                    </p>
+                </div>
+        
+                <div class="">
+                    <img class=" rounded-full mx-auto" src="images/image 4.png" alt="">
+                    <h5 class=" text-white">Practice</h5>
+                    <p class="text-[#FFFFFF80]">Practice builds skill, consistency,<br> and
+                        mastery.</p>
+                </div>
+        
+                <div class="">
+                    <img class=" rounded-full mx-auto" src="images/image 5.png" alt="">
+                    <h5 class=" text-white">Weight Loss</h5>
+                    <p class=" text-[#FFFFFF80]">Weight loss requires consistency,
+                        <br>patience, and discipline.</p>
+                </div>
+            </div>
+        </section>
+    <!-- another section start run an extra -->
+    <section class=" bg-[#222222] rounded-lg mb-16">
+        <div class="flex items-center gap-12">
+            <div class=" ml-12">
+                <h3 class=" text-white text-4xl font-extrabold">Run an Extra <br>Mile Easily</h3>
+                <p class=" my-6 text-[#FFFFFF80]">Running an extra mile becomes easier when you focus on
+                    pacing yourself, maintaining steady breathing, and staying mentally resilient. Break the distance into
+                    smaller goals to keep motivation high. Finally, remind yourself of the satisfaction and progress you'll
+                    feel once you've completed it.</p>
+                <button class="btn bg-[#E6533C] px-12 py-4"  >
+                     <a href="./run&ExtraMile.html">Join Now</a>
+                    </button>
+            </div>
+            <div class="m-8">
+                <img class="rounded-lg w-[365px] h-[312px]" src="images/run.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+<!-- BMI calculate section -->
+    <section class="text-center my-20">
+        <div>
+            <h3 class="text-white text-3xl font-extrabold mb-3">BMI Calculator</h3>
+            <p class="text-[#FFFFFF80] text-sm mt-3">A BMI calculator quickly estimates body fat by dividing a person's weight by the square of their height.</p>
+        </div>
+    </section>
+    
+    <div class="bg-[#222222] py-10 px-[-150px]">
+        <section class="flex justify-around items-center">
+            <div class="max-w-full">
+                <div>
+                    <h3 class="text-2xl text-white">BMI Calculator Chart</h3>
+                    <table class="w-full border border-white border-opacity-10 mb-5">
+                        <thead>
+                            <tr class="text-white text-sm font-light">
+                                <th class="px-6 py-3">BMI</th>
+                                <th class="px-6 py-3">Weight Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-[#FFFFFF80] text-sm">
+                            <tr>
+                                <td class="px-6 py-3">Below 18.5</td>
+                                <td class="px-6 py-3">Underweight</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-3">18.5 - 24.9</td>
+                                <td class="px-6 py-3">Healthy</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-3">25.0 - 29.9</td>
+                                <td class="px-6 py-3">Overweight</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-3">30.0 and Above</td>
+                                <td class="px-6 py-3">Obese</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    
+                <div class="bg-transparent">
+                    <h3 class="text-2xl text-white">Calculate your BMI</h3>
+                    <p class="text-[#FFFFFF80] text-sm mt-3">BMI (Body Mass Index) is a numerical value derived from a person's <br>weight and height, used to assess if they are underweight, <br>normal weight, overweight, or obese.</p>
+    
+                    <form id="bmi-form" class="flex flex-col mt-5">
+                        <div class="flex justify-between gap-3 mb-3"> 
+                            <input type="text" id="height" placeholder="Height (cm)" required class="px-3 py-2 bg-white bg-opacity-10 rounded-md w-full focus:bg-white">
+                            <input type="text" id="weight" placeholder="Weight (kg)" required class="px-3 py-2 bg-white bg-opacity-10 rounded-md w-full">
+                        </div>
+                        <div class="flex justify-between gap-3 mb-3">
+                            <input type="text" id="age" placeholder="Age" required class="px-3 py-2 bg-white bg-opacity-10 rounded-md w-full">
+                            <select id="sex" required class="bg-white bg-opacity-10 text-white rounded-md px-3 py-2 w-full focus:bg-white focus:text-black">
+                                <option value="">Sex</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <select id="activity" required class="bg-white bg-opacity-10 text-white rounded-md px-3 py-2 mb-3 focus:bg-white focus:text-black">
+                            <option  value="">Select an activity factor</option>
+                            <option  value="sedentary">Sedentary</option>
+                            <option value="light">Lightly Active</option>
+                            <option value="moderate">Moderately Active</option>
+                            <option value="active">Very Active</option>
+                        </select>
+                        <button type="submit" class="bg-[#E6533C] px-6 py-3 rounded-md text-white mt-5">Calculate</button>
+                    </form>
+    
+                    <div id="bmi-result" class="hidden mt-5">
+                        <h4 class="text-white text-lg">Your BMI is: <span id="bmi-value"></span></h4>
+                        <h5 id="bmi-status" class="text-white text-sm"></h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+   
+    
+        
+
+       <!-- Meet Our Team Section -->
+<section class="my-10">
+    <div class=" text-center mb-14">
+      <h3 class="text-3xl font-extrabold mb-4 text-white">Meet Our Team</h3>
+      <p class=" text-[#FFFFFF80]">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+    </div>
+  
+    <div class=" bg-white bg-opacity-10  rounded-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 px-5 pt-5 pb-28">
+      <!-- Team Member 1 -->
+      <div class="flex flex-col items-center justify-center">
+        <img src="images/trainer1.png" alt="Trainer Jerome Bell" class="w-[300px] h-[200px] bg-black bg-opacity-20 rounded-lg"/>
+        <div class="-ml-36 -mt-16">
+          <h5 class="text-lg font-extrabold text-white">Jerome Bell</h5>
+          <p class=" text-[#FFFFFF80]">Trainer</p>
+        </div>
+      </div>
+  
+      <!-- Team Member 2 -->
+      <div class="flex flex-col items-center justify-center">
+        <img src="images/trainer2.png" alt="Trainer Cameron Willis" class="w-[300px] h-[200px] bg-black bg-opacity-20 rounded-lg"/>
+        <div class="-ml-36 -mt-16">
+          <h5 class="text-lg font-extrabold text-white">Cameron Willis</h5>
+          <p class=" text-[#FFFFFF80]">Trainer</p>
+        </div>
+      </div>
+  
+      <!-- Team Member 3 -->
+      <div class="flex flex-col items-center justify-center">
+        <img src="images/trainer3.png" alt="Trainer Darrell Steward" class="w-[300px] h-[200px] bg-black bg-opacity-20 rounded-lg"/>
+        <div class="-ml-36 -mt-16">
+          <h5 class="text-lg font-extrabold text-white">Darrell Steward</h5>
+          <p class=" text-[#FFFFFF80]">Trainer</p>
+        </div>
+      </div>
+  
+      <!-- Team Member 4 -->
+      <div class="flex flex-col items-center justify-center">
+        <img src="images/trainer4.png" alt="Trainer Dianne Russel" class="w-[300px] h-[200px] bg-black bg-opacity-20 rounded-lg"/>
+        <div class="-ml-36 -mt-16">
+          <h5 class="text-lg font-extrabold text-white">Dianne Russel</h5>
+          <p class=" text-[#FFFFFF80]">Trainer</p>
+        </div>
+      </div>
+  
+      <!-- Team Member 5 -->
+      <div class="flex flex-col items-center justify-center">
+        <img src="images/trainer5.png" alt="Trainer Cody Fisher" class="w-[300px] h-[200px] bg-black bg-opacity-20 rounded-lg"/>
+        <div class="-ml-36 -mt-16">
+          <h5 class="text-lg font-extrabold text-white">Cody Fisher</h5>
+          <p class=" text-[#FFFFFF80]">Trainer</p>
+        </div>
+      </div>
+  
+      <!-- Team Member 6 -->
+      <div class="flex flex-col items-center justify-center">
+        <img src="images/trainer6.png" alt="Trainer Theresa Webb" class="w-[300px] h-[200px] bg-black bg-opacity-20 rounded-lg"/>
+        <div class="-ml-36 -mt-16">
+          <h5 class="text-lg font-extrabold text-white">Theresa Webb</h5>
+          <p class=" text-[#FFFFFF80]">Trainer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+    </main>
+    <footer class="bg-[#212432] mt-20">
+        <div class="flex justify-center gap-[152px]">
+            <div>
+                <h3 class="text-[#E6533C] text-[4.4rem] font-extrabold mt-[65px] mb-[20px]">GR_Fitness</h3>
+                <p class="text-[#FFFFFF] text-opacity-50 text-[1.4rem] font-normal">Fitness is the state of being physically <br>healthy, strong, and active through regular <br> exercise and proper nutrition.</p>
+            </div>
+            <div>
+                <h4 class="text-white text-[2rem] font-bold mt-[65px] ml-[37px]">Get Started</h4>
+                <ul>
+                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Service</a></li>
+                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Contact Us</a></li>
+                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Affiliate Program</a></li>
+                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">About Us</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h4 class="text-white text-[2rem] font-bold mt-[65px] ml-[37px]">Get Started</h4>
+                <ul>
+                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Fitness</a></li>
+                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Platform</a></li>
+                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Workout Library</a></li>
+                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">App Design</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="border-t-2 border-white border-opacity-10 w-[70%] mx-auto mt-[50px] mb-[50px]"></div>
+    
+        <p class="text-white text-opacity-50 text-[1.2rem] font-normal text-center pb-[36px] mb-[-4px]">All right reserved @Fitness 2024</p>
+    </footer>
+    
+
+
+
+    
+
+
+    <script src="./js/booking.js"></script>
+    <script src="./js/claculateBMI.js"></script>
+
+
+    
+</body>
+</html>

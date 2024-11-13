@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run an Extra Mile</title>
+    <!-- daisy-Ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customize config -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                
+
+                
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <header class="text-center py-8">
+        <div class="fixed top-0 z-10 w-full items-center bg-[#28282B]">
+            <nav class="px-10 ">
+                <div class="navbar">
+                    <div class="navbar-start pl-2">
+
+
+                        <a class="font-extrabold text-4xl nav-title text-[#E6533C]"><i>GR_Fitness</i></a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a class="font-extrabold text-slate-100" href="./home.html">Home</a></li>
+                            <li><a class="text-slate-100">Services</a></li>
+                            <li><a class="text-slate-100">Contact</a></li>
+                            <li><a class="text-slate-100">About</a></li>
+                            <li><a class="text-slate-100">Support</a></li>
+                            <li><a href="./myPackage.html" class="text-slate-100" >My Package</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="navbar-end gap-6 hidden sm:flex">
+
+                        <ul class="menu menu-horizontal px-2 gap-3">
+                            <li><a class="font-extrabold bg-[#E6533C] text-white" href="login.php"
+                                    target="_blank">Login</a></li>
+                            <li><a class="text-white" href="signup.php" target="_blank">Signup</a></li>
+
+                        </ul>
+                    </div>
+
+
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost pl-44 lg:hidden ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2  shadow">
+                            <li><a class="font-extrabold">Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Contact</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Support</a></li>
+                            <li><a href="./myPackage.html"  target="_blank">My Package</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </nav>
+
+        </div>
+       
+    </header>
+    <main class="flex flex-col items-center mt-24">
+        <section>
+            <h1 class="text-4xl font-bold">Run an Extra Mile - Tips and Techniques</h1>
+        </section>
+       <div class="flex gap-64">
+         <!-- Daily Task Section -->
+         <section class="bg-gray-800 p-6 rounded-lg mt-5 w-full max-w-lg">
+            <h3 class="text-2xl font-bold mb-4">Daily Task</h3>
+            <div class="flex items-center gap-2 mb-2">
+                <input type="checkbox" id="dailyTaskCheckbox" class="h-5 w-5 text-[#E6533C] rounded focus:ring-0" onclick="completeDailyTask()">
+                <label for="dailyTaskCheckbox" class="text-gray-400">Complete a walk 20 minutes</label>
+            </div>
+        </section>
+
+        <!-- Reward Balance Section -->
+        <section class="bg-gray-800 p-6 rounded-lg mt-5 w-full max-w-lg flex items-center justify-between text-lg text-gray-400">
+            <span>Reward Balance:</span>
+            <span id="rewardCoin" class="font-bold text-2xl text-[#E6533C]">0</span> Coins
+        </section>
+       </div>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="bg-[#212432] mt-20">
+        <div class="flex justify-center gap-[152px]">
+            <div>
+                <h3 class="text-[#E6533C] text-[4.4rem] font-extrabold mt-[65px] mb-[20px]">GR_Fitness</h3>
+                <p class="text-[#FFFFFF] text-opacity-50 text-[1.4rem] font-normal">Fitness is the state of being physically <br>healthy, strong, and active through regular <br> exercise and proper nutrition.</p>
+            </div>
+            <div>
+                <h4 class="text-white text-[2rem] font-bold mt-[65px] ml-[37px]">Get Started</h4>
+                <ul>
+                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Service</a></li>
+                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Contact Us</a></li>
+                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Affiliate Program</a></li>
+                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">About Us</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h4 class="text-white text-[2rem] font-bold mt-[65px] ml-[37px]">Get Started</h4>
+                <ul>
+                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Fitness</a></li>
+                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Platform</a></li>
+                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Workout Library</a></li>
+                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">App Design</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="border-t-2 border-white border-opacity-10 w-[70%] mx-auto mt-[50px] mb-[50px]"></div>
+    
+        <p class="text-white text-opacity-50 text-[1.2rem] font-normal text-center pb-[36px] mb-[-4px]">All right reserved @Fitness 2024</p>
+    </footer>
+    
+
+
+
+    <script>
+        // localStorage.removeItem("rewardBalance"); 
+
+        // localStorage.removeItem("lastCompletedDate"); 
+
+
+        // Initialize reward balance from LocalStorage or set to 0 if not found
+        let rewardBalance = parseInt(localStorage.getItem("rewardBalance")) || 0;
+        document.getElementById("rewardCoin").textContent = rewardBalance;
+
+        // Check the daily task completed
+        const today = new Date().toDateString();
+        const lastCompletedDate = localStorage.getItem("lastCompletedDate");
+
+      
+        if (lastCompletedDate === today) {
+            document.getElementById("dailyTaskCheckbox").checked = true;
+        }
+
+   
+        function completeDailyTask() {
+            const checkbox = document.getElementById("dailyTaskCheckbox");
+
+            // Ensure task can only be completed once per day
+            if (checkbox.checked && lastCompletedDate !== today) {
+                rewardBalance += 10;
+                document.getElementById("rewardCoin").textContent = rewardBalance;
+
+                // Update LocalStorage with the new balance and completion date
+                localStorage.setItem("rewardBalance", rewardBalance);
+                localStorage.setItem("lastCompletedDate", today);
+
+                alert("Congratulations! You've earned 10 coin for completing today's task.");
+            } else if (!checkbox.checked) {
+                // Prevent unchecking from decreasing the balance
+                alert("You can't uncheck a completed task for today.");
+                checkbox.checked = true;
+            }
+        }
+    </script>
+</body>
+</html>
