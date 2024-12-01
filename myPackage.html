@@ -12,73 +12,62 @@
     <header>
 
         <div class="fixed top-0 z-10 w-full items-center bg-[#28282B]">
-            <nav class="px-10 ">
-                <div class="navbar">
-                    <div class="navbar-start pl-2">
-
-
-                        <a class="font-extrabold text-4xl nav-title text-[#E6533C]"><i>GR_Fitness</i></a>
-                    </div>
-                    <div class="navbar-center hidden lg:flex">
-                        <ul class="menu menu-horizontal px-1">
-                            <li><a class="font-extrabold text-slate-100" href="./home.html">Home</a></li>
-                            <li><a class="text-slate-100">Services</a></li>
-                            <li><a class="text-slate-100">Contact</a></li>
-                            <li><a class="text-slate-100">About</a></li>
-                            <li><a class="text-slate-100">Support</a></li>
-                            <li><a href="./myPackage.html"  target="_blank" class="text-slate-100" >My Package</a></li>
-
-                        </ul>
-                    </div>
-                    <div class="navbar-end gap-6 hidden sm:flex">
-
-                        <ul class="menu menu-horizontal px-2 gap-3">
-                            <li><a class="font-extrabold bg-[#E6533C] text-white" href="login.php"
-                                    target="_blank">Login</a></li>
-                            <li><a class="text-white" href="signup.php" target="_blank">Signup</a></li>
-
-                        </ul>
-                    </div>
-
-
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost pl-44 lg:hidden ">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2  shadow">
-                            <li><a class="font-extrabold">Home</a></li>
-                            <li><a>Services</a></li>
-                            <li><a>Contact</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Support</a></li>
-                            <li><a href="./myPackage.html"  target="_blank">My Package</a></li>
-                        </ul>
-                    </div>
-
+            <nav class="px-10">
+              <div class="navbar">
+                <div class="navbar-start pl-2">
+                  <a class="font-extrabold text-4xl nav-title text-[#E6533C]"><i>GR_Fitness</i></a>
                 </div>
-
-
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a href="./home.html" class="font-extrabold text-slate-100">Home</a></li>
+                    <li><a href="services.html" class="text-slate-100">Services</a></li>
+                    <li><a class="text-slate-100">Contact</a></li>
+                    <li><a class="text-slate-100">About</a></li>
+                    <li><a class="text-slate-100">Support</a></li>
+                    <li id="myPackageMenu"><a class="text-slate-100">My Package</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-6">
+                  <!-- Login/Signup Buttons -->
+                  <ul id="authButtons" class="menu menu-horizontal px-2 gap-3">
+                    <li><a id="loginBtn" href="./Authentication/login.html" target="_blank" class="font-extrabold bg-[#E6533C] text-white">Login</a></li>
+                    <li><a id="signupBtn" href="./Authentication/signUp.html" target="_blank" class="text-white">Signup</a></li>
+                  </ul>
+        
+                  <!-- User Icon and Logout -->
+                  <div id="userIcon" class="hidden dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-10 rounded-full">
+                        <img src="images/userImage.jpg" alt="User Icon" />
+                      </div>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2 shadow">
+                      <li><a href="profile.html">Profile</a></li>
+                      <li><a id="logoutBtn" class="text-red-600">Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </nav>
-
-        </div>
-
+          </div>
     </header>
 
     <main class="my-28">
         <div class="card bg-base-100 w-96 shadow-xl">
             <div class="card-body">
-              <h2 class="card-title">Card title!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
-              </div>
+                <h2 class="card-title" id="packageName"></h2>
+                <p id="packageDescription"></p>
+                <div class="max-w-[190px] h-[100px] mt-2 ml-[87px] rounded-[18px] shadow-[0px_4px_1px_rgba(0,0,0,0.25)] bg-[rgba(48,48,48,0.54)] flex flex-col items-center justify-center">
+                    <span class="text-center">
+                        <h3 class="text-white pt-6 text-[1.5rem] font-extrabold" id="packagePrice"></h3>
+                        <p class="text-white text-xs font-normal mt-[-10px]" id="packageDuration"></p>
+                    </span>
+                </div>
+                <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Confirm Booking</button>
+                </div>
             </div>
-          </div>
+        </div>
     </main>
 
 
@@ -113,8 +102,27 @@
     
         <p class="text-white text-opacity-50 text-[1.2rem] font-normal text-center pb-[36px] mb-[-4px]">All right reserved @Fitness 2024</p>
     </footer>
-    
 
+    <script src="./js/handleLogin&Signup.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Retrieve the package details from localStorage
+            const packageDetails = JSON.parse(localStorage.getItem('packageDetails'));
+
+            if (packageDetails) {
+                // Populate the fields with package details
+                document.getElementById('packageName').textContent = packageDetails.packageName;
+                document.getElementById('packageDescription').textContent = packageDetails.description;
+                document.getElementById('packagePrice').textContent = packageDetails.price;
+                document.getElementById('packageDuration').textContent = packageDetails.duration;
+            } else {
+                // If no package details are found, redirect to home or show an error
+                alert('No package details found. Redirecting to home.');
+                window.location.href = '/home.html';
+            }
+        });
+    </script>
     
 </body>
 </html>

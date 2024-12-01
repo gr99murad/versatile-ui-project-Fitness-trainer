@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    
+    <!-- daisy-Ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <div class="fixed top-0 z-10 w-full items-center bg-[#28282B]">
+            <nav class="px-10">
+              <div class="navbar">
+                <div class="navbar-start pl-2">
+                  <a class="font-extrabold text-4xl nav-title text-[#E6533C]"><i>GR_Fitness</i></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a href="./home.html" class="font-extrabold text-slate-100">Home</a></li>
+                    <li><a class="text-slate-100">Services</a></li>
+                    <li><a href="contact.html" class="text-slate-100">Contact</a></li>
+                    <li><a class="text-slate-100">About</a></li>
+                    <li><a class="text-slate-100">Support</a></li>
+                    <li id="myPackageMenu"><a href="myPackage.html" class="text-slate-100">My Package</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-6">
+                  <!-- Login/Signup Buttons -->
+                  <ul id="authButtons" class="menu menu-horizontal px-2 gap-3">
+                    <li><a id="loginBtn" href="./Authentication/login.html" target="_blank" class="font-extrabold bg-[#E6533C] text-white">Login</a></li>
+                    <li><a id="signupBtn" href="./Authentication/signUp.html" target="_blank" class="text-white">Signup</a></li>
+                  </ul>
+        
+                  <!-- User Icon and Logout -->
+                  <div id="userIcon" class="hidden dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-10 rounded-full">
+                        <img src="images/userImage.jpg" alt="User Icon" />
+                      </div>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2 shadow">
+                      <li><a href="profile.html">Profile</a></li>
+                      <li><a id="logoutBtn" class="text-red-600">Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+    </header>
+    <main>
+
+        <section id="services" class="py-16 px-4 bg-white">
+            <div class="container mx-auto text-center">
+                <h1 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Our Fitness Services</h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-12">We offer a range of fitness services to help you achieve your health and fitness goals. Whether you're looking for personal training, group classes, or nutrition coaching, we have something for everyone!</p>
+    
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Personal Training</h2>
+                        <p class="text-gray-600 mb-4">One-on-one sessions with a certified trainer to create a personalized workout plan tailored to your goals.</p>
+                        <button class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition">Learn More</button>
+                    </div>
+    
+                    <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Group Classes</h2>
+                        <p class="text-gray-600 mb-4">Join our energizing group classes for a fun, motivating workout experience with others.</p>
+                        <button class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition">Learn More</button>
+                    </div>
+    
+                    <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Nutrition Coaching</h2>
+                        <p class="text-gray-600 mb-4">Get expert advice on nutrition and meal planning to complement your fitness journey.</p>
+                        <button class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition">Learn More</button>
+                    </div>
+    
+                    <div class="service-card bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-2xl transition duration-300">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Online Coaching</h2>
+                        <p class="text-gray-600 mb-4">Receive customized workouts and guidance from the comfort of your own home, with virtual check-ins.</p>
+                        <button class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./js/handleLogin&Signup.js"></script>
+</body>
+</html>

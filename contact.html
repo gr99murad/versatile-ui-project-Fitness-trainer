@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+
+    
+    <!-- daisy-Ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- customize config -->
+</head>
+<body>
+    <header>
+        <div class="fixed top-0 z-10 w-full items-center bg-[#28282B]">
+            <nav class="px-10">
+              <div class="navbar">
+                <div class="navbar-start pl-2">
+                  <a class="font-extrabold text-4xl nav-title text-[#E6533C]"><i>GR_Fitness</i></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a href="./home.html" class="font-extrabold text-slate-100">Home</a></li>
+                    <li><a href="services.html" class="text-slate-100">Services</a></li>
+                    <li><a class="text-slate-100">Contact</a></li>
+                    <li><a  class="text-slate-100">About</a></li>
+                    <li><a class="text-slate-100">Support</a></li>
+                    <li id="myPackageMenu"><a href="myPackage.html" class="text-slate-100">My Package</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-6">
+                  <!-- Login/Signup Buttons -->
+                  <ul id="authButtons" class="menu menu-horizontal px-2 gap-3">
+                    <li><a id="loginBtn" href="./Authentication/login.html" target="_blank" class="font-extrabold bg-[#E6533C] text-white">Login</a></li>
+                    <li><a id="signupBtn" href="./Authentication/signUp.html" target="_blank" class="text-white">Signup</a></li>
+                  </ul>
+        
+                  <!-- User Icon and Logout -->
+                  <div id="userIcon" class="hidden dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-10 rounded-full">
+                        <img src="images/userImage.jpg" alt="User Icon" />
+                      </div>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2 shadow">
+                      <li><a href="profile.html">Profile</a></li>
+                      <li><a id="logoutBtn" class="text-red-600">Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+    </header>
+    <main>
+
+        <section id="contact" class="py-16 px-4 bg-white">
+            <div class="container mx-auto text-center">
+                <h1 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-6">Contact Us</h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-12">We'd love to hear from you! Fill out the form below to get in touch with us.</p>
+    
+                <form action="#" method="POST" class="max-w-4xl mx-auto bg-gray-100 p-8 rounded-lg shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your Name">
+                        </div>
+    
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your Email">
+                        </div>
+                    </div>
+    
+                    <div class="mt-6">
+                        <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Subject">
+                    </div>
+    
+                    <div class="mt-6">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="6" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your message"></textarea>
+                    </div>
+    
+                    <div class="mt-6 text-center">
+                        <button type="submit" class="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./js/handleLogin&Signup.js"></script>
+</body>
+</html>

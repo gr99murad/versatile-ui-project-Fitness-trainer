@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+  <div class="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
+    <h1 class="text-2xl font-bold text-center mb-6">Sign Up</h1>
+    <form id="signupForm" class="space-y-4">
+      <input type="text" id="signupUsername" placeholder="Username" class="w-full p-3 border border-gray-300 rounded-lg" required />
+      <input type="password" id="signupPassword" placeholder="Password" class="w-full p-3 border border-gray-300 rounded-lg" required />
+      <input type="password" id="signupConfirmPassword" placeholder="Confirm Password" class="w-full p-3 border border-gray-300 rounded-lg" required />
+      <button type="submit" class="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Sign Up</button>
+    </form>
+    <p class="mt-4 text-center">Already have an account? <a href="login.html" class="text-blue-500">Log in here</a></p>
+  </div>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent the form from refreshing the page
+  
+      const username = document.getElementById('signupUsername').value;
+      const password = document.getElementById('signupPassword').value;
+      const confirmPassword = document.getElementById('signupConfirmPassword').value;
+  
+      if (password !== confirmPassword) {
+        alert('Passwords do not match!');
+        return;
+      }
+  
+      const existingUser = localStorage.getItem('user');
+      if (existingUser) {
+        alert('An account already exists. Please log in.');
+        return;
+      }
+  
+      const user = { username, password };
+      localStorage.setItem('user', JSON.stringify(user)); // Save user as JSON
+      alert('Signup successful! Please log in.');
+      window.location.href = './login.html'; // Redirect to login page
+    });
+  </script>
+  
+
+</body>
+</html>

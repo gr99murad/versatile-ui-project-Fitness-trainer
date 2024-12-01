@@ -33,62 +33,49 @@
 </head>
 <body class="bg-[#28282B] w-ful overflow-x-hidden  inter-font ">
     <header class="bg-gradient-to-r from-[#111111] to-[#777777]  ">
+       <!-- Navbar -->
+  <div class="fixed top-0 z-10 w-full items-center bg-[#28282B]">
+    <nav class="px-10">
+      <div class="navbar">
+        <div class="navbar-start pl-2">
+          <a class="font-extrabold text-4xl nav-title text-[#E6533C]"><i>GR_Fitness</i></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="font-extrabold text-slate-100">Home</a></li>
+            <li><a href="services.html" class="text-slate-100">Services</a></li>
+            <li><a href="contact.html" class="text-slate-100">Contact</a></li>
+            <li><a href="#meet-our-team" class="text-slate-100">Meet Our Team</a></li>
+            <li><a class="text-slate-100">About</a></li>
+            <li><a class="text-slate-100">Support</a></li>
+            <li id="myPackageMenu" class="hidden"><a href="./myPackage.html" class="text-slate-100">My Package</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-6">
+          <!-- Login/Signup Buttons -->
+          <ul id="authButtons" class="menu menu-horizontal px-2 gap-3">
+            <li><a id="loginBtn" href="./Authentication/login.html" target="_blank" class="font-extrabold bg-[#E6533C] text-white">Login</a></li>
+            <li><a id="signupBtn" href="./Authentication/signUp.html" target="_blank" class="text-white">Signup</a></li>
+          </ul>
+
+          <!-- User Icon and Logout -->
+          <div id="userIcon" class="hidden dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img src="images/userImage.jpg" alt="User Icon" />
+              </div>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2 shadow">
+              <li><a href="profile.html">Profile</a></li>
+              <li><a id="logoutBtn" class="text-red-600">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+   
     
-            <div class="fixed top-0 z-10 w-full items-center bg-[#28282B]">
-                <nav class="px-10 ">
-                    <div class="navbar">
-                        <div class="navbar-start pl-2">
-    
-    
-                            <a class="font-extrabold text-4xl nav-title text-[#E6533C]"><i>GR_Fitness</i></a>
-                        </div>
-                        <div class="navbar-center hidden lg:flex">
-                            <ul class="menu menu-horizontal px-1">
-                                <li><a class="font-extrabold text-slate-100">Home</a></li>
-                                <li><a class="text-slate-100">Services</a></li>
-                                <li><a class="text-slate-100">Contact</a></li>
-                                <li><a class="text-slate-100">About</a></li>
-                                <li><a class="text-slate-100">Support</a></li>
-                                <li><a href="./myPackage.html"class="text-slate-100" >My Package</a></li>
-    
-                            </ul>
-                        </div>
-                        <div class="navbar-end gap-6 hidden sm:flex">
-    
-                            <ul class="menu menu-horizontal px-2 gap-3">
-                                <li><a class="font-extrabold bg-[#E6533C] text-white" href="login.php"
-                                        target="_blank">Login</a></li>
-                                <li><a class="text-white" href="signup.php" target="_blank">Signup</a></li>
-    
-                            </ul>
-                        </div>
-    
-    
-                        <div class="dropdown">
-                            <div tabindex="0" role="button" class="btn btn-ghost pl-44 lg:hidden ">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 6h16M4 12h8m-8 6h16" />
-                                </svg>
-                            </div>
-                            <ul tabindex="0"
-                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2  shadow">
-                                <li><a class="font-extrabold">Home</a></li>
-                                <li><a>Services</a></li>
-                                <li><a>Contact</a></li>
-                                <li><a>About</a></li>
-                                <li><a>Support</a></li>
-                                <li><a href="./myPackage.html"  target="_blank">My Package</a></li>
-                            </ul>
-                        </div>
-    
-                    </div>
-    
-    
-                </nav>
-    
-            </div>
             <!-- banner section -->
             <div class="flex flex-col md:flex-row justify-between px-10 py-10 mt-10 overflow-y-hidden">
                 <div class="">
@@ -147,13 +134,13 @@
                       <h2 class="card-title">FREE FITNESS GEAR PACKAGE</h2>
                       <div class="max-w-[190px] h-[100px] mt-2 ml-[87px] rounded-[18px] shadow-[0px_4px_1px_rgba(0,0,0,0.25)] bg-[rgba(48,48,48,0.54)] flex flex-col items-center justify-center">
                         <span class="text-center">
-                          <h3 class=" text-white pt-6 text-[1.5rem] font-extrabold">600</h3>
+                          <h3 class=" text-white pt-6 text-[1.5rem] font-extrabold">$60</h3>
                           <p class=" text-white text-xs font-normal mt-[-10px]">3 MONTHS</p>
                         </span>
                       </div>
                       <p>Free fitness gear complimentary one pass</p>
                       <div class="card-actions justify-end">
-                        <button class="btn" onclick="window.location.href='./login.php'"  >BOOKING NOW</button>
+                        <button class="btn" onclick="handleBooking('FREE FITNESS GEAR PACKAGE', '$60', '3 MONTHS', 'Free fitness gear complimentary one pass')">BOOKING NOW</button>
                       </div>
                     </div>
                   </div>
@@ -164,29 +151,31 @@
                       <h2 class="card-title">MEMBERSHIP PACKAGE</h2>
                       <div class="max-w-[190px] h-[100px] mt-2 ml-[87px] rounded-[18px] shadow-[0px_4px_1px_rgba(0,0,0,0.25)] bg-[rgba(48,48,48,0.54)] flex flex-col items-center justify-center">
                         <span class="text-center">
-                          <h3 class=" text-white pt-6 text-[1.5rem] font-extrabold">800</h3>
+                          <h3 class=" text-white pt-6 text-[1.5rem] font-extrabold">$80</h3>
                           <p class=" text-white text-xs font-normal mt-[-10px]">6 MONTHS</p>
                         </span>
                       </div>
                       <p class="text-[#FFFFFF80]">Book six days different trainers class designed <br>for fast weight loss /weight gain with <br>combination of latest workouts in addition to complimentary access to gym area <br> with personal training </p>
                       <div class="card-actions justify-end">
-                        <button class="btn" onclick="handleBooking()">BOOKING NOW</button>
+                        <button class="btn" onclick="handleBooking('MEMBERSHIP PACKAGE', '$80', '6 MONTHS', 'Book six days different trainers class designed for fast weight loss /weight gain with combination of latest workouts in addition to complimentary access to gym area with personal training')">BOOKING NOW</button>
+
                       </div>
                     </div>
                   </div>
 
                   <div class="card bg-[#222222] text-primary-content w-96">
                     <div class="card-body">
-                      <h2 class="card-title">PREMIUM MEMBERSHIP PACKAGE</h2>
+                      <h2 class="card-title">PREMIUM MEMBERSHIP</h2>
                       <div class="max-w-[190px] h-[100px] mt-2 ml-[87px] rounded-[18px] shadow-[0px_4px_1px_rgba(0,0,0,0.25)] bg-[rgba(48,48,48,0.54)] flex flex-col items-center justify-center">
                         <span class="text-center">
-                          <h3 class=" text-white pt-6 text-[1.5rem] font-extrabold">1200</h3>
-                          <p class=" text-white text-xs font-normal mt-[-10px]">4 MONTHS</p>
+                          <h3 class=" text-white pt-6 text-xl font-extrabold py-5">$120</h3>
+                          <p class=" text-white text-xs font-normal mt-[-10px]">6 MONTHS</p>
                         </span>
                       </div>
                       <p class="text-[#FFFFFF80]">A combination of latest workouts in <br> addition to complimentary access to <br>the gym area with personal training
                         <div class="card-actions justify-end">
-                            <button class="btn" onclick="window.location.href='./login.php'">BOOKING NOW</button>
+                          <button class="btn" onclick="handleBooking('PREMIUM MEMBERSHIP', '$120', '6 MONTHS', 'A combination of latest workouts in addition to complimentary access to the gym area with personal training')">BOOKING NOW</button>
+
                           </div>
                       </div>
                     </div>
@@ -339,7 +328,7 @@
         
 
        <!-- Meet Our Team Section -->
-<section class="my-10">
+<section id="meet-our-team" class="my-10">
     <div class=" text-center mb-14">
       <h3 class="text-3xl font-extrabold mb-4 text-white">Meet Our Team</h3>
       <p class=" text-[#FFFFFF80]">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
@@ -444,6 +433,7 @@
 
     <script src="./js/booking.js"></script>
     <script src="./js/claculateBMI.js"></script>
+    <script src="./js/handleLogin&Signup.js"></script>
 
 
     
