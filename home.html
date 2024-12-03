@@ -34,46 +34,77 @@
 <body class="bg-[#28282B] w-ful overflow-x-hidden  inter-font ">
     <header class="bg-gradient-to-r from-[#111111] to-[#777777]  ">
        <!-- Navbar -->
-  <div class="fixed top-0 z-10 w-full items-center bg-[#28282B]">
-    <nav class="px-10">
-      <div class="navbar">
-        <div class="navbar-start pl-2">
-          <a class="font-extrabold text-4xl nav-title text-[#E6533C]"><i>GR_Fitness</i></a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a class="font-extrabold text-slate-100">Home</a></li>
-            <li><a href="services.html" class="text-slate-100">Services</a></li>
-            <li><a href="contact.html" class="text-slate-100">Contact</a></li>
-            <li><a href="#meet-our-team" class="text-slate-100">Meet Our Team</a></li>
-            <li><a class="text-slate-100">About</a></li>
-            <li><a class="text-slate-100">Support</a></li>
-            <li id="myPackageMenu" class="hidden"><a href="./myPackage.html" class="text-slate-100">My Package</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end gap-6">
-          <!-- Login/Signup Buttons -->
-          <ul id="authButtons" class="menu menu-horizontal px-2 gap-3">
-            <li><a id="loginBtn" href="./Authentication/login.html" target="_blank" class="font-extrabold bg-[#E6533C] text-white">Login</a></li>
-            <li><a id="signupBtn" href="./Authentication/signUp.html" target="_blank" class="text-white">Signup</a></li>
-          </ul>
-
-          <!-- User Icon and Logout -->
-          <div id="userIcon" class="hidden dropdown dropdown-end">
-            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-              <div class="w-10 rounded-full">
-                <img src="images/userImage.jpg" alt="User Icon" />
+       <div class="fixed top-0 z-10 w-full items-center bg-[#28282B]">
+        <nav class="px-10">
+          <div class="navbar">
+            <!-- Navbar Start -->
+            <div class="navbar-start">
+              <!-- Dropdown for Small Screens -->
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn  text-white btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <!-- Dropdown Menu -->
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[100] mt-3 w-52 p-2 shadow">
+                  <li><a>Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="#meet-our-team">Meet Our Team</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Support</a></li>
+                </ul>
               </div>
-            </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2 shadow">
-              <li><a href="profile.html">Profile</a></li>
-              <li><a id="logoutBtn" class="text-red-600">Logout</a></li>
-            </ul>
+              <!-- Main Title -->
+              <a class="font-extrabold text-4xl nav-title text-[#E6533C]"><i>GR_Fitness</i></a>
+            </div>
+      
+            <!-- Navbar Center -->
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="font-extrabold text-slate-100">Home</a></li>
+                <li><a href="services.html" class="text-slate-100">Services</a></li>
+                <li><a href="contact.html" class="text-slate-100">Contact</a></li>
+                <li><a href="#meet-our-team" class="text-slate-100">Meet Our Team</a></li>
+                <li><a class="text-slate-100">About</a></li>
+                <li><a class="text-slate-100">Support</a></li>
+              </ul>
+            </div>
+      
+            <!-- Navbar End -->
+            <div class="navbar-end gap-6">
+              <ul id="authButtons" class="menu menu-horizontal px-2 gap-3">
+                <li><a id="loginBtn" href="./Authentication/login.html" class="font-extrabold bg-[#E6533C] text-white">Login</a></li>
+                <li><a id="signupBtn" href="./Authentication/signUp.html" class="text-white">Signup</a></li>
+              </ul>
+              <div id="userIcon" class="hidden dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full">
+                    <img src="images/userImage.jpg" alt="User Icon" />
+                  </div>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2 shadow">
+                  <li><a href="profile.html">Profile</a></li>
+                  <li><a id="logoutBtn" class="text-red-600">Logout</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
+        </nav>
       </div>
-    </nav>
-  </div>
+      
    
     
             <!-- banner section -->
