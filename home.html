@@ -34,7 +34,7 @@
 <body class="bg-[#28282B] w-full overflow-x-hidden  inter-font ">
     <header class="bg-gradient-to-r from-[#111111] to-[#777777]  ">
        <!-- Navbar -->
-       <div class="fixed top-0 z-10 w-[60%] md:w-full items-center bg-[#28282B]">
+       <div class="fixed top-0 z-10 w-full items-center bg-[#28282B]">
         <nav class="px-10">
           <div class="navbar">
             <!-- Navbar Start -->
@@ -86,7 +86,7 @@
             <!-- Navbar End -->
             <div class="navbar-end gap-6">
               <ul id="authButtons" class="menu menu-horizontal px-2 gap-3">
-               <div>
+               <div class="md:flex">
                 <li><a id="loginBtn" href="./Authentication/login.html" class="font-extrabold bg-[#E6533C] text-white">Login</a></li>
                 <li><a id="signupBtn" href="./Authentication/signUp.html" class="text-white">Signup</a></li>
                </div>
@@ -426,38 +426,46 @@
   
 
     </main>
-    <footer class="bg-[#212432] mt-20">
-        <div class="flex justify-center gap-[152px]">
-            <div>
-                <h3 class="text-[#E6533C] text-[4.4rem] font-extrabold mt-[65px] mb-[20px]">GR_Fitness</h3>
-                <p class="text-[#FFFFFF] text-opacity-50 text-[1.4rem] font-normal">Fitness is the state of being physically <br>healthy, strong, and active through regular <br> exercise and proper nutrition.</p>
-            </div>
-            <div>
-                <h4 class="text-white text-[2rem] font-bold mt-[65px] ml-[37px]">Get Started</h4>
-                <ul>
-                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Service</a></li>
-                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Contact Us</a></li>
-                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Affiliate Program</a></li>
-                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">About Us</a></li>
-                </ul>
-            </div>
-    
-            <div>
-                <h4 class="text-white text-[2rem] font-bold mt-[65px] ml-[37px]">Get Started</h4>
-                <ul>
-                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Fitness</a></li>
-                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Platform</a></li>
-                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Workout Library</a></li>
-                    <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">App Design</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="border-t-2 border-white border-opacity-10 w-[70%] mx-auto mt-[50px] mb-[50px]"></div>
+    <footer class="footer bg-[#212432] text-base-content p-10">
+      <aside>
+      
+        <p>
+          <h3 class="text-[#E6533C] text-[4.4rem] font-extrabold mt-[65px] mb-[20px]">GR_Fitness</h3>
+          
+          <br />
+          <p class="text-[#FFFFFF] text-opacity-50 text-[1.4rem] font-normal">Fitness is the state of being physically <br>healthy, strong, and active through regular <br> exercise and proper nutrition.</p>
+        </p>
+      </aside>
+      <h4 class="text-white text-[2rem] font-bold mt-[65px] ml-[37px]">Get Started</h4>
+      <nav>
+        <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Service</a></li>
+        <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Contact Us</a></li>
+        <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Affiliate Program</a></li>
+        <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">About Us</a></li>
+      </nav>
+      <h4 class="text-white text-[2rem] font-bold mt-[65px] ml-[37px]">Get Started</h4>
+      <nav>
+        <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Service</a></li>
+        <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Contact Us</a></li>
+        <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Affiliate Program</a></li>
+        <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">About Us</a></li>
+      </nav>
+      <nav>
+        <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Fitness</a></li>
+        <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Platform</a></li>
+        <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">Workout Library</a></li>
+        <li class="mb-[10px]"><a href="" class="text-white text-opacity-50 text-[1.4rem] font-normal">App Design</a></li>
+      </nav>
+
+      <div class="border-t-2 border-white border-opacity-10 w-[70%] mx-auto mt-[50px] mb-[50px]"></div>
     
         <p class="text-white text-opacity-50 text-[1.2rem] font-normal text-center pb-[36px] mb-[-4px]">All right reserved @Fitness 2024</p>
     </footer>
     
+        
+        
+    
+  
 
 
 
